@@ -12,6 +12,7 @@
 @import "screen/find.css";
 body {
   color: #2e363e;
+  height: 750vh;
 }
 
 .main-screen {
