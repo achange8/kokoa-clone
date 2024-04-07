@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header{
+        background-color: rgb(51, 51, 51);
+        color: white;
+        padding: 10px;
+      }
+
+      footer {
+        background-color: rgb(51, 51, 51);
+        color: white;
+        font-size: 10px;
+        padding: 20px;
+        margin-top: 10px;
+      }
+      .main {
+        position: relative;
+        width: 96%;
+        margin-left: 2%;
+      }
+      .Static {
+        border: solid 1px silver;
+        background-color: rgb(238, 238, 238);
+        width: 96%;
+        position: static;
+        padding: 15px;
+      }
+      .Relative {
+        border: solid 1px silver;
+        position: relative;
+        width: 96%;
+        margin-left: 1%;
+        padding: 15px;
+
+      }
+      .parent{
+        height: 150px;
+        position: relative;
+      }
+      .Absolute1{
+        position: absolute;
+      }
+      .Absolute2 {
+        position: absolute;
+        background-color: rgb(238, 238, 238);
+        padding: 15px;
+        bottom: 1%;
+        right: 3%;
+      }
+      .Fixed {
+        position: fixed;
+        bottom: 7%;
+        right: 3%;
+        background-color: rgb(238, 238, 238);
+        padding: 10px;
+      }
+      div{
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+       <h2>
+        Positionプロパティのサンプル
+       </h2> 
+    </header>
+    <div class="main">
+        <div>
+            <h3>Static</h3>
+            <div class="Static">
+                この要素は、staticでpositionプロパティが指定されています。
+            </div>
+
+        </div>
+        <div>
+            <h3>Relative</h3>
+            <div class="Relative">
+                この要素は、relativeでpositionプロパティが指定されています。
+            </div>
+        </div>
+        <div class="parent">
+            <h3>Absolute</h3>
+            <div class="Absolute1">
+                この要素は、absoluteでpositionプロパティが指定されています。
+            </div>
+            <div class="Absolute2">
+                この要素は、親要素に対してabsoluteでpositionプロパティが指定されています。
+            </div>
+        </div>
+        <h3>Fixed</h3>
+        <div class="Fixed">
+            この要素は、fixedでpositionプロパティが指定されています。
+        </div>
+    </div>
+    <footer>© Mysite</footer>
+   
+  </body>
+</html>
